@@ -55,11 +55,6 @@ jobs:
             echo "No data changes to commit"
           else
             git commit -m "Update AQICN air quality data"
-<<<<<<< HEAD
             git pull --rebase origin main
             git push origin main
           fi
-=======
-            git push
-          fi
->>>>>>> d6c8897 (Updated project)

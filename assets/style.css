@@ -1,0 +1,229 @@
+/* assets/style.css — Byrnihat Air Pollution Streamlit App */
+
+/* ── Google Font ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Root tokens ── */
+:root {
+    --bg-primary:   #0f172a;
+    --bg-surface:   #1e293b;
+    --bg-card:      #1e293b;
+    --border:       #334155;
+    --accent-blue:  #60a5fa;
+    --accent-orange:#f97316;
+    --accent-green: #34d399;
+    --accent-red:   #ef4444;
+    --accent-violet:#a78bfa;
+    --text-primary: #f1f5f9;
+    --text-muted:   #94a3b8;
+    --radius:       12px;
+    --shadow:       0 4px 24px rgba(0,0,0,0.45);
+}
+
+/* ── Base app font ── */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* ── Hide Streamlit branding ── */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header    { visibility: hidden; }
+
+/* ── Page background ── */
+.stApp {
+    background-color: var(--bg-primary);
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background: var(--bg-surface) !important;
+    border-right: 1px solid var(--border);
+}
+[data-testid="stSidebar"] * {
+    color: var(--text-primary) !important;
+}
+[data-testid="stSidebar"] .stMarkdown h1,
+[data-testid="stSidebar"] .stMarkdown h2,
+[data-testid="stSidebar"] .stMarkdown h3 {
+    color: var(--accent-blue) !important;
+    font-weight: 600;
+}
+
+/* ── Metric cards ── */
+[data-testid="stMetric"] {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+}
+[data-testid="stMetricLabel"] {
+    color: var(--text-muted) !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+[data-testid="stMetricValue"] {
+    color: var(--text-primary) !important;
+    font-size: 1.7rem !important;
+    font-weight: 700;
+}
+[data-testid="stMetricDelta"] {
+    font-size: 0.85rem !important;
+}
+
+/* ── Tabs ── */
+[data-testid="stTabs"] [data-baseweb="tab"] {
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.2s, border-color 0.2s;
+    padding: 0.6rem 1rem;
+}
+[data-testid="stTabs"] [data-baseweb="tab"]:hover {
+    color: var(--text-primary);
+}
+[data-testid="stTabs"] [aria-selected="true"] {
+    border-bottom: 2px solid var(--accent-blue) !important;
+    color: var(--accent-blue) !important;
+    background: transparent !important;
+}
+
+/* ── Buttons ── */
+.stButton > button {
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    transition: opacity 0.2s, transform 0.1s;
+}
+.stButton > button:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* ── Download button ── */
+[data-testid="stDownloadButton"] > button {
+    background: linear-gradient(135deg, #065f46, #047857);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+[data-testid="stDownloadButton"] > button:hover {
+    opacity: 0.88;
+}
+
+/* ── Expanders ── */
+[data-testid="stExpander"] {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 0.5rem;
+}
+[data-testid="stExpander"] summary {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* ── Selectboxes and sliders ── */
+[data-baseweb="select"] {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+[data-baseweb="select"] * {
+    color: var(--text-primary) !important;
+}
+.stSlider [data-baseweb="slider"] {
+    accent-color: var(--accent-blue);
+}
+
+/* ── DataFrames ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* ── Spinners ── */
+[data-testid="stSpinner"] {
+    color: var(--accent-blue) !important;
+}
+
+/* ── Section headers ── */
+.section-header {
+    color: var(--accent-blue);
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* ── AQI status badge (rendered via st.markdown) ── */
+.aqi-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* ── Info card ── */
+.info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+}
+.info-card .label {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.info-card .value {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ── Alert boxes ── */
+[data-testid="stAlert"] {
+    border-radius: var(--radius) !important;
+    border-left-width: 4px !important;
+}
+
+/* ── Progress bars ── */
+.stProgress > div > div {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    border-radius: 999px;
+}
+
+/* ── Plotly chart containers ── */
+.js-plotly-plot .plotly {
+    border-radius: var(--radius);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-blue); }

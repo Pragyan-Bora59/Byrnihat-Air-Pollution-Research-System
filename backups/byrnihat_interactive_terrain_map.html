@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_45ed63d7aaaea74076793b4229fba05c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_45ed63d7aaaea74076793b4229fba05c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_45ed63d7aaaea74076793b4229fba05c = L.map(
+                "map_45ed63d7aaaea74076793b4229fba05c",
+                {
+                    center: [26.0, 91.85],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4b83aed5f8d30590cea46636b82650d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c4b83aed5f8d30590cea46636b82650d.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var tile_layer_f939de18cba62870a8e7adc5b6b05a64 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "titles": "OpenStreetMap",
+}
+
+            );
+        
+    
+            tile_layer_f939de18cba62870a8e7adc5b6b05a64.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var tile_layer_a85987d95bff5843d9c109a66c7c78d3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Map data: \u00a9 OpenStreetMap contributors, SRTM | Map style: \u00a9 OpenTopoMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "titles": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+}
+
+            );
+        
+    
+            tile_layer_a85987d95bff5843d9c109a66c7c78d3.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var tile_layer_f4db6938ca851c9c873bbc673bf8776f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "titles": "CartoDB positron",
+}
+
+            );
+        
+    
+            tile_layer_f4db6938ca851c9c873bbc673bf8776f.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var feature_group_68fba081efde1f42eb1741d170b6749a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5011525316879e03cadfe55861a140a3 = L.marker(
+                [26.065, 91.875],
+                {
+}
+            ).addTo(feature_group_68fba081efde1f42eb1741d170b6749a);
+        
+    
+            var icon_c43cf891d3b4ce7478be9bca241dd109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5feb23fc3f1e1ca1009a18362d2e83a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9441b75a94c9c2c7b9efe3ff5a3a203 = $(`<div id="html_e9441b75a94c9c2c7b9efe3ff5a3a203" style="width: 100.0%; height: 100.0%;"><b>Byrnihat</b><br>Main Industrial study area</div>`)[0];
+                popup_b5feb23fc3f1e1ca1009a18362d2e83a.setContent(html_e9441b75a94c9c2c7b9efe3ff5a3a203);
+            
+        
+
+        marker_5011525316879e03cadfe55861a140a3.bindPopup(popup_b5feb23fc3f1e1ca1009a18362d2e83a)
+        ;
+
+        
+    
+    
+            marker_5011525316879e03cadfe55861a140a3.bindTooltip(
+                `<div>
+                     Byrnihat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5011525316879e03cadfe55861a140a3.setIcon(icon_c43cf891d3b4ce7478be9bca241dd109);
+            
+    
+            var marker_dc09fd35e86afe9bd09c23530d3229e8 = L.marker(
+                [26.1445, 91.7362],
+                {
+}
+            ).addTo(feature_group_68fba081efde1f42eb1741d170b6749a);
+        
+    
+            var icon_e57f149294382c16a3a9d0dd1b9c8707 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25ba07e842d5ba77b77cf0ab850cd71b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c0db2f264bad5ef7988b6cc69071076 = $(`<div id="html_8c0db2f264bad5ef7988b6cc69071076" style="width: 100.0%; height: 100.0%;"><b>Guwahati</b><br>Nearby major city in Assam</div>`)[0];
+                popup_25ba07e842d5ba77b77cf0ab850cd71b.setContent(html_8c0db2f264bad5ef7988b6cc69071076);
+            
+        
+
+        marker_dc09fd35e86afe9bd09c23530d3229e8.bindPopup(popup_25ba07e842d5ba77b77cf0ab850cd71b)
+        ;
+
+        
+    
+    
+            marker_dc09fd35e86afe9bd09c23530d3229e8.bindTooltip(
+                `<div>
+                     Guwahati
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc09fd35e86afe9bd09c23530d3229e8.setIcon(icon_e57f149294382c16a3a9d0dd1b9c8707);
+            
+    
+            var marker_636cc503d450445330d5b7ffa5e999b0 = L.marker(
+                [25.5788, 91.8933],
+                {
+}
+            ).addTo(feature_group_68fba081efde1f42eb1741d170b6749a);
+        
+    
+            var icon_9eb917d718e2a10aceabbd6147484d78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c3e880f1b018d727ac471e037b125de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94a24319e1fcfeb60b7588dd1c5ddf6d = $(`<div id="html_94a24319e1fcfeb60b7588dd1c5ddf6d" style="width: 100.0%; height: 100.0%;"><b>Shillong</b><br>Nearby hill city in Meghalaya</div>`)[0];
+                popup_1c3e880f1b018d727ac471e037b125de.setContent(html_94a24319e1fcfeb60b7588dd1c5ddf6d);
+            
+        
+
+        marker_636cc503d450445330d5b7ffa5e999b0.bindPopup(popup_1c3e880f1b018d727ac471e037b125de)
+        ;
+
+        
+    
+    
+            marker_636cc503d450445330d5b7ffa5e999b0.bindTooltip(
+                `<div>
+                     Shillong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_636cc503d450445330d5b7ffa5e999b0.setIcon(icon_9eb917d718e2a10aceabbd6147484d78);
+            
+    
+            feature_group_68fba081efde1f42eb1741d170b6749a.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var feature_group_e64337ef98812797fe6f479ab823031f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_44697bcd3e99fcafa0e2cdd9be9b0bf8 = L.circleMarker(
+                [26.009156, 91.812765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_27165f154fd25547a537e6a54fe985e0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7de492b114aa5134096d2e90965a4534 = $(`<div id="html_7de492b114aa5134096d2e90965a4534" style="width: 100.0%; height: 100.0%;">     <b>M/s H.M. Cement Pvt. Ltd.</b><br>     Type: cement grinding unit<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 5.0<br>     PM2.5: 3.0<br>      SO2: 2.857<br>     NOx: 3.0<br><br>      Confidence: medium-high<br>     Coordinate status: verified_from_google_maps<br>     Location: Upper Baliyan, Umtru Road, Byrnihat     </div>`)[0];
+                popup_27165f154fd25547a537e6a54fe985e0.setContent(html_7de492b114aa5134096d2e90965a4534);
+            
+        
+
+        circle_marker_44697bcd3e99fcafa0e2cdd9be9b0bf8.bindPopup(popup_27165f154fd25547a537e6a54fe985e0)
+        ;
+
+        
+    
+    
+            circle_marker_44697bcd3e99fcafa0e2cdd9be9b0bf8.bindTooltip(
+                `<div>
+                     M/s H.M. Cement Pvt. Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c95459f9906c9688c9fced39f6ac40a6 = L.circleMarker(
+                [26.051755, 91.869578],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3848, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_d3c40ba9b85721c8327856bfb400c72c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d2994bcef3620a1e910ce9dc8985447b = $(`<div id="html_d2994bcef3620a1e910ce9dc8985447b" style="width: 100.0%; height: 100.0%;">     <b>M/s Shyam Century Ferrous Limited</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 2.308<br>     PM2.5: 2.308<br>      SO2: 1.978<br>     NOx: 2.308<br><br>      Confidence: medium-high<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_d3c40ba9b85721c8327856bfb400c72c.setContent(html_d2994bcef3620a1e910ce9dc8985447b);
+            
+        
+
+        circle_marker_c95459f9906c9688c9fced39f6ac40a6.bindPopup(popup_d3c40ba9b85721c8327856bfb400c72c)
+        ;
+
+        
+    
+    
+            circle_marker_c95459f9906c9688c9fced39f6ac40a6.bindTooltip(
+                `<div>
+                     M/s Shyam Century Ferrous Limited
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1be38682209392af7619823c42208223 = L.circleMarker(
+                [26.0214, 91.845591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.6586, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_4f150040ff16e06a915496aed20d34cb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_babff085e2756c7ff7c91b2fb158eb6d = $(`<div id="html_babff085e2756c7ff7c91b2fb158eb6d" style="width: 100.0%; height: 100.0%;">     <b>Maithan Alloys Ltd</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.431<br>     PM2.5: 4.431<br>      SO2: 3.798<br>     NOx: 4.431<br><br>      Confidence: high<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_4f150040ff16e06a915496aed20d34cb.setContent(html_babff085e2756c7ff7c91b2fb158eb6d);
+            
+        
+
+        circle_marker_1be38682209392af7619823c42208223.bindPopup(popup_4f150040ff16e06a915496aed20d34cb)
+        ;
+
+        
+    
+    
+            circle_marker_1be38682209392af7619823c42208223.bindTooltip(
+                `<div>
+                     Maithan Alloys Ltd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2343a134061f8c16b9419a5336095842 = L.circleMarker(
+                [26.074555, 91.873931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5172, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_748f97ca2fb7571346cb46f52aea9ed7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d91e3f94078614ce1ab3b2ab9b24fa63 = $(`<div id="html_d91e3f94078614ce1ab3b2ab9b24fa63" style="width: 100.0%; height: 100.0%;">     <b>Nalari Ferro Alloys Pvt. Ltd.</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 0.862<br>     PM2.5: 0.862<br>      SO2: 0.739<br>     NOx: 0.862<br><br>      Confidence: high<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_748f97ca2fb7571346cb46f52aea9ed7.setContent(html_d91e3f94078614ce1ab3b2ab9b24fa63);
+            
+        
+
+        circle_marker_2343a134061f8c16b9419a5336095842.bindPopup(popup_748f97ca2fb7571346cb46f52aea9ed7)
+        ;
+
+        
+    
+    
+            circle_marker_2343a134061f8c16b9419a5336095842.bindTooltip(
+                `<div>
+                     Nalari Ferro Alloys Pvt. Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a76ae05f686ff73e611ee97b42496d91 = L.circleMarker(
+                [26.03423, 91.846605],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_205a6d7075f647e6f3cd174f642e9b65 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_64668e211600a7664057d1e64a283a27 = $(`<div id="html_64668e211600a7664057d1e64a283a27" style="width: 100.0%; height: 100.0%;">     <b>M/s Pioneer Carbide (P) Ltd.</b><br>     Type: ferro alloy / carbide<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 5.0<br>     PM2.5: 5.0<br>      SO2: 4.286<br>     NOx: 5.0<br><br>      Confidence: medium-high<br>     Coordinate status: verified_from_google_maps<br>     Location: Upper Balian, Umtru Road, Byrnihat     </div>`)[0];
+                popup_205a6d7075f647e6f3cd174f642e9b65.setContent(html_64668e211600a7664057d1e64a283a27);
+            
+        
+
+        circle_marker_a76ae05f686ff73e611ee97b42496d91.bindPopup(popup_205a6d7075f647e6f3cd174f642e9b65)
+        ;
+
+        
+    
+    
+            circle_marker_a76ae05f686ff73e611ee97b42496d91.bindTooltip(
+                `<div>
+                     M/s Pioneer Carbide (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_183d6d5c965c0fa792f95f7d8af4b90d = L.circleMarker(
+                [26.024474, 91.839043],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_b7c479a7ff334a27987b3d87bc8276da = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b1d0585e9d8b34bab36937c1b5912e6d = $(`<div id="html_b1d0585e9d8b34bab36937c1b5912e6d" style="width: 100.0%; height: 100.0%;">     <b>Meghalaya Steel Ltd.</b><br>     Type: M.S. ingots / re-rolling / ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 10.0<br>     PM2.5: 10.0<br>      SO2: 8.571<br>     NOx: 10.0<br><br>      Confidence: medium<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_b7c479a7ff334a27987b3d87bc8276da.setContent(html_b1d0585e9d8b34bab36937c1b5912e6d);
+            
+        
+
+        circle_marker_183d6d5c965c0fa792f95f7d8af4b90d.bindPopup(popup_b7c479a7ff334a27987b3d87bc8276da)
+        ;
+
+        
+    
+    
+            circle_marker_183d6d5c965c0fa792f95f7d8af4b90d.bindTooltip(
+                `<div>
+                     Meghalaya Steel Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bf6375c3a5133065cb9ee447d45227c = L.circleMarker(
+                [26.022676, 91.846746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_0a73890838773b14b172d42430c69d32 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5d3ca34bc03f7b2c154761a41e2c7338 = $(`<div id="html_5d3ca34bc03f7b2c154761a41e2c7338" style="width: 100.0%; height: 100.0%;">     <b>Khasi Alloys</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.0<br>     PM2.5: 4.0<br>      SO2: 3.429<br>     NOx: 4.0<br><br>      Confidence: medium<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_0a73890838773b14b172d42430c69d32.setContent(html_5d3ca34bc03f7b2c154761a41e2c7338);
+            
+        
+
+        circle_marker_4bf6375c3a5133065cb9ee447d45227c.bindPopup(popup_0a73890838773b14b172d42430c69d32)
+        ;
+
+        
+    
+    
+            circle_marker_4bf6375c3a5133065cb9ee447d45227c.bindTooltip(
+                `<div>
+                     Khasi Alloys
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecfe3c49fcf2aab9e689a1f8e5c9840e = L.circleMarker(
+                [26.03715, 91.86218],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_2c223ce0c017580124120dbf51356900 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f3fb9581d8215beab2bdda534f13b48e = $(`<div id="html_f3fb9581d8215beab2bdda534f13b48e" style="width: 100.0%; height: 100.0%;">     <b>M/s Pawan Castings Meghalaya (Pvt) Ltd.</b><br>     Type: M.S. ingot / M.S. rolled unit<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.0<br>     PM2.5: 4.0<br>      SO2: 2.857<br>     NOx: 4.0<br><br>      Confidence: medium-high<br>     Coordinate status: verified_from_google_maps<br>     Location: Harlibagan, Byrnihat     </div>`)[0];
+                popup_2c223ce0c017580124120dbf51356900.setContent(html_f3fb9581d8215beab2bdda534f13b48e);
+            
+        
+
+        circle_marker_ecfe3c49fcf2aab9e689a1f8e5c9840e.bindPopup(popup_2c223ce0c017580124120dbf51356900)
+        ;
+
+        
+    
+    
+            circle_marker_ecfe3c49fcf2aab9e689a1f8e5c9840e.bindTooltip(
+                `<div>
+                     M/s Pawan Castings Meghalaya (Pvt) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_465ed0930df720c3609053f630b9656d = L.circleMarker(
+                [26.073742, 91.872576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_17950f65ddda549ee0703df12d1aaab4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c2dbfd24020b679e3c5ba28762c8ba51 = $(`<div id="html_c2dbfd24020b679e3c5ba28762c8ba51" style="width: 100.0%; height: 100.0%;">     <b>M/s Jaintia Ferro Alloys Pvt. Ltd.</b><br>     Type: mild steel ingots / ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.0<br>     PM2.5: 4.0<br>      SO2: 2.857<br>     NOx: 4.0<br><br>      Confidence: medium-high<br>     Coordinate status: verified_from_google_maps<br>     Location: 13th Mile, Tamulkuchi, Byrnihat     </div>`)[0];
+                popup_17950f65ddda549ee0703df12d1aaab4.setContent(html_c2dbfd24020b679e3c5ba28762c8ba51);
+            
+        
+
+        circle_marker_465ed0930df720c3609053f630b9656d.bindPopup(popup_17950f65ddda549ee0703df12d1aaab4)
+        ;
+
+        
+    
+    
+            circle_marker_465ed0930df720c3609053f630b9656d.bindTooltip(
+                `<div>
+                     M/s Jaintia Ferro Alloys Pvt. Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54839546b9edd7d50af19de3cc4606d7 = L.circleMarker(
+                [26.027641, 91.8467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8462, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_997559baf9c890c37c7074642083a62e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dac48eb0b82da523e640b3184408474f = $(`<div id="html_dac48eb0b82da523e640b3184408474f" style="width: 100.0%; height: 100.0%;">     <b>Nezones Industries Ltd.</b><br>     Type: G.I. pipes<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 3.077<br>     PM2.5: 3.077<br>      SO2: 2.198<br>     NOx: 3.077<br><br>      Confidence: high<br>     Coordinate status: verified_from_google_maps<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_997559baf9c890c37c7074642083a62e.setContent(html_dac48eb0b82da523e640b3184408474f);
+            
+        
+
+        circle_marker_54839546b9edd7d50af19de3cc4606d7.bindPopup(popup_997559baf9c890c37c7074642083a62e)
+        ;
+
+        
+    
+    
+            circle_marker_54839546b9edd7d50af19de3cc4606d7.bindTooltip(
+                `<div>
+                     Nezones Industries Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_584016b3debdd338f6d99054024f1772 = L.circleMarker(
+                [26.0525, 91.8705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_b395112dd0b019697f036d3435c7a34e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2b41e7aa5e6510775f5d851ca7295051 = $(`<div id="html_2b41e7aa5e6510775f5d851ca7295051" style="width: 100.0%; height: 100.0%;">     <b>EPIP Ferro-Alloy Cluster</b><br>     Type: cluster: ferro-alloy industries with unavailable exact coordinates<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 7.5<br>     PM2.5: 7.5<br>      SO2: 6.429<br>     NOx: 7.5<br><br>      Confidence: medium<br>     Coordinate status: approximate_cluster_centroid<br>     Location: EPIP Byrnihat cluster centroid     </div>`)[0];
+                popup_b395112dd0b019697f036d3435c7a34e.setContent(html_2b41e7aa5e6510775f5d851ca7295051);
+            
+        
+
+        circle_marker_584016b3debdd338f6d99054024f1772.bindPopup(popup_b395112dd0b019697f036d3435c7a34e)
+        ;
+
+        
+    
+    
+            circle_marker_584016b3debdd338f6d99054024f1772.bindTooltip(
+                `<div>
+                     EPIP Ferro-Alloy Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9aa3b5edd6fc4100b636beb4260356d = L.circleMarker(
+                [26.0245, 91.8445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_1c0c92d07f1ae99ae5acb7029d24c489 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9a335ba7a334a704e4454fffb87aa6a2 = $(`<div id="html_9a335ba7a334a704e4454fffb87aa6a2" style="width: 100.0%; height: 100.0%;">     <b>EPIP Steel/Re-rolling Cluster</b><br>     Type: cluster: steel, ingot, rolling and re-rolling units<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 5.2<br>     PM2.5: 5.2<br>      SO2: 3.714<br>     NOx: 5.2<br><br>      Confidence: medium<br>     Coordinate status: approximate_cluster_centroid<br>     Location: EPIP Byrnihat cluster centroid     </div>`)[0];
+                popup_1c0c92d07f1ae99ae5acb7029d24c489.setContent(html_9a335ba7a334a704e4454fffb87aa6a2);
+            
+        
+
+        circle_marker_a9aa3b5edd6fc4100b636beb4260356d.bindPopup(popup_1c0c92d07f1ae99ae5acb7029d24c489)
+        ;
+
+        
+    
+    
+            circle_marker_a9aa3b5edd6fc4100b636beb4260356d.bindTooltip(
+                `<div>
+                     EPIP Steel/Re-rolling Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_706e2d614baa8e2d386f6e25005cb89f = L.circleMarker(
+                [26.0694, 91.8679],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_1d78ec27c771aabe72d7ea9930accddc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7c5c4a91c145b23b8de254720ec1636c = $(`<div id="html_7c5c4a91c145b23b8de254720ec1636c" style="width: 100.0%; height: 100.0%;">     <b>Tamulkuchi-13th Mile Stone/Brick Cluster</b><br>     Type: cluster: quarry, crusher and brick-kiln sources<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 5.5<br>     PM2.5: 3.3<br>      SO2: 3.143<br>     NOx: 2.2<br><br>      Confidence: low-medium<br>     Coordinate status: approximate_cluster_centroid<br>     Location: Tamulkuchi / 13th Mile, Byrnihat     </div>`)[0];
+                popup_1d78ec27c771aabe72d7ea9930accddc.setContent(html_7c5c4a91c145b23b8de254720ec1636c);
+            
+        
+
+        circle_marker_706e2d614baa8e2d386f6e25005cb89f.bindPopup(popup_1d78ec27c771aabe72d7ea9930accddc)
+        ;
+
+        
+    
+    
+            circle_marker_706e2d614baa8e2d386f6e25005cb89f.bindTooltip(
+                `<div>
+                     Tamulkuchi-13th Mile Stone/Brick Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a35298ec6f80c6e1510f3ae6d5b560b9 = L.circleMarker(
+                [26.0371, 91.8622],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_f395a5347a196f3b62de6478ed770094 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_816e6a85966448b234ff120c89b4478c = $(`<div id="html_816e6a85966448b234ff120c89b4478c" style="width: 100.0%; height: 100.0%;">     <b>Harlibagan Casting/Ingots Cluster</b><br>     Type: cluster: casting, M.S. ingots and rolled products<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.0<br>     PM2.5: 4.0<br>      SO2: 2.857<br>     NOx: 4.0<br><br>      Confidence: medium<br>     Coordinate status: approximate_cluster_centroid<br>     Location: Harlibagan, Byrnihat     </div>`)[0];
+                popup_f395a5347a196f3b62de6478ed770094.setContent(html_816e6a85966448b234ff120c89b4478c);
+            
+        
+
+        circle_marker_a35298ec6f80c6e1510f3ae6d5b560b9.bindPopup(popup_f395a5347a196f3b62de6478ed770094)
+        ;
+
+        
+    
+    
+            circle_marker_a35298ec6f80c6e1510f3ae6d5b560b9.bindTooltip(
+                `<div>
+                     Harlibagan Casting/Ingots Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1bda9f7823763e6290f767a19b20f5b = L.circleMarker(
+                [26.07, 91.875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_a6ce0c66c876f4633ca3f9a57c45ebae = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f1098b02fbed5fe9aefd54545790a8d3 = $(`<div id="html_f1098b02fbed5fe9aefd54545790a8d3" style="width: 100.0%; height: 100.0%;">     <b>Byrnihat Assam-side Coke/Cement Cluster</b><br>     Type: cluster: Assam-side coke/cement industrial belt<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 7.0<br>     PM2.5: 7.0<br>      SO2: 10.0<br>     NOx: 5.6<br><br>      Confidence: low-medium<br>     Coordinate status: approximate_cluster_centroid<br>     Location: Assam-side industrial belt near Byrnihat     </div>`)[0];
+                popup_a6ce0c66c876f4633ca3f9a57c45ebae.setContent(html_f1098b02fbed5fe9aefd54545790a8d3);
+            
+        
+
+        circle_marker_a1bda9f7823763e6290f767a19b20f5b.bindPopup(popup_a6ce0c66c876f4633ca3f9a57c45ebae)
+        ;
+
+        
+    
+    
+            circle_marker_a1bda9f7823763e6290f767a19b20f5b.bindTooltip(
+                `<div>
+                     Byrnihat Assam-side Coke/Cement Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c9ded6fad804ab3a1bf7d71d6acc79b = L.circleMarker(
+                [26.113355, 91.891226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_dc38119f7e04e9d1de37fcc33b06df94 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_88ec7d641dc2889aade5f0aef5f99d13 = $(`<div id="html_88ec7d641dc2889aade5f0aef5f99d13" style="width: 100.0%; height: 100.0%;">     <b>Raksha Cement Plants Cluster</b><br>     Type: cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 8.0<br>     PM2.5: 4.8<br>      SO2: 4.571<br>     NOx: 4.8<br><br>      Confidence: medium-high<br>     Coordinate status: approximate_from_google_maps_user_provided<br>     Location: Kamarkuchi/Tapesia/Sonapur, Assam-side Byrnihat industrial belt     </div>`)[0];
+                popup_dc38119f7e04e9d1de37fcc33b06df94.setContent(html_88ec7d641dc2889aade5f0aef5f99d13);
+            
+        
+
+        circle_marker_6c9ded6fad804ab3a1bf7d71d6acc79b.bindPopup(popup_dc38119f7e04e9d1de37fcc33b06df94)
+        ;
+
+        
+    
+    
+            circle_marker_6c9ded6fad804ab3a1bf7d71d6acc79b.bindTooltip(
+                `<div>
+                     Raksha Cement Plants Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd19e0a4a4a7e3b243c45614b40e8459 = L.circleMarker(
+                [26.115, 91.888],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_4857b601946e951eab231d9f28b9196f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8f60fffdb08c6bd175f44f2c0237795c = $(`<div id="html_8f60fffdb08c6bd175f44f2c0237795c" style="width: 100.0%; height: 100.0%;">     <b>Delta Cement Plant Cluster</b><br>     Type: cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 6.5<br>     PM2.5: 3.9<br>      SO2: 3.714<br>     NOx: 3.9<br><br>      Confidence: low<br>     Coordinate status: approximate_from_published_map<br>     Location: Assam-side Byrnihat industrial cluster, near Raksha/Purbanchal cement belt     </div>`)[0];
+                popup_4857b601946e951eab231d9f28b9196f.setContent(html_8f60fffdb08c6bd175f44f2c0237795c);
+            
+        
+
+        circle_marker_bd19e0a4a4a7e3b243c45614b40e8459.bindPopup(popup_4857b601946e951eab231d9f28b9196f)
+        ;
+
+        
+    
+    
+            circle_marker_bd19e0a4a4a7e3b243c45614b40e8459.bindTooltip(
+                `<div>
+                     Delta Cement Plant Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc12a7a59860a08060a4f983b6a0c45e = L.circleMarker(
+                [26.06127, 91.883283],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.399999999999999, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_f8e8ff9e34e526a7753c6a88ed1dc465 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8ad813c8757d529d93df284e7b8e9693 = $(`<div id="html_8ad813c8757d529d93df284e7b8e9693" style="width: 100.0%; height: 100.0%;">     <b>Purbanchal Cement Cluster</b><br>     Type: cement plant / cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 9.0<br>     PM2.5: 5.4<br>      SO2: 5.143<br>     NOx: 5.4<br><br>      Confidence: high-for-cluster<br>     Coordinate status: published_coordinate_used_as_cluster_point<br>     Location: Sarutari, Sonapur/Byrnihat, Assam     </div>`)[0];
+                popup_f8e8ff9e34e526a7753c6a88ed1dc465.setContent(html_8ad813c8757d529d93df284e7b8e9693);
+            
+        
+
+        circle_marker_fc12a7a59860a08060a4f983b6a0c45e.bindPopup(popup_f8e8ff9e34e526a7753c6a88ed1dc465)
+        ;
+
+        
+    
+    
+            circle_marker_fc12a7a59860a08060a4f983b6a0c45e.bindTooltip(
+                `<div>
+                     Purbanchal Cement Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63bd52346eb90dbf38a97e7d0f3eb97d = L.circleMarker(
+                [26.084, 91.879],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.16, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_6bc5a1b6973008a6c05bc36b8f894f3f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_431c364aed5550bb11792974a98b1151 = $(`<div id="html_431c364aed5550bb11792974a98b1151" style="width: 100.0%; height: 100.0%;">     <b>Superlite AAC Blocks Cluster</b><br>     Type: AAC blocks / construction material cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 3.6<br>     PM2.5: 1.8<br>      SO2: 1.286<br>     NOx: 1.8<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_user_ai_overview<br>     Location: Sarutari / Byrnihat-Sonapur Road, Assam     </div>`)[0];
+                popup_6bc5a1b6973008a6c05bc36b8f894f3f.setContent(html_431c364aed5550bb11792974a98b1151);
+            
+        
+
+        circle_marker_63bd52346eb90dbf38a97e7d0f3eb97d.bindPopup(popup_6bc5a1b6973008a6c05bc36b8f894f3f)
+        ;
+
+        
+    
+    
+            circle_marker_63bd52346eb90dbf38a97e7d0f3eb97d.bindTooltip(
+                `<div>
+                     Superlite AAC Blocks Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35cbcabeaa560bfd9b7380edb69ed9a3 = L.circleMarker(
+                [26.059, 91.898],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6552, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_125382de266a5d2bdc426456a6e3924c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_98c2db4371447df2f8c3051a652eac2f = $(`<div id="html_98c2db4371447df2f8c3051a652eac2f" style="width: 100.0%; height: 100.0%;">     <b>Greystone Ispat Ltd.</b><br>     Type: steel / torsteel<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 6.092<br>     PM2.5: 6.092<br>      SO2: 4.352<br>     NOx: 6.092<br><br>      Confidence: medium<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Byrnihat Industrial Park, Umtru Road, EPIP Byrnihat     </div>`)[0];
+                popup_125382de266a5d2bdc426456a6e3924c.setContent(html_98c2db4371447df2f8c3051a652eac2f);
+            
+        
+
+        circle_marker_35cbcabeaa560bfd9b7380edb69ed9a3.bindPopup(popup_125382de266a5d2bdc426456a6e3924c)
+        ;
+
+        
+    
+    
+            circle_marker_35cbcabeaa560bfd9b7380edb69ed9a3.bindTooltip(
+                `<div>
+                     Greystone Ispat Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5004a26f24f0f653b3746655c4ee94f = L.circleMarker(
+                [26.045, 91.855],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.997199999999999, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_8fe74227c4503d29624eec1819e6d007 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7d9f38b12b059df7dc97f68598cbb63e = $(`<div id="html_7d9f38b12b059df7dc97f68598cbb63e" style="width: 100.0%; height: 100.0%;">     <b>Gita Ferro Alloys (P) Ltd.</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 1.662<br>     PM2.5: 1.662<br>      SO2: 1.424<br>     NOx: 1.662<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: EPIP/FPIP Industrial Estate, Raja Bagan, Byrnihat     </div>`)[0];
+                popup_8fe74227c4503d29624eec1819e6d007.setContent(html_7d9f38b12b059df7dc97f68598cbb63e);
+            
+        
+
+        circle_marker_e5004a26f24f0f653b3746655c4ee94f.bindPopup(popup_8fe74227c4503d29624eec1819e6d007)
+        ;
+
+        
+    
+    
+            circle_marker_e5004a26f24f0f653b3746655c4ee94f.bindTooltip(
+                `<div>
+                     Gita Ferro Alloys (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_797bdfc0ed7fedf071ff30fb849ba86e = L.circleMarker(
+                [26.0525, 91.8694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5172, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_a30e70384e99f4c886da90e56fedb4eb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1397b81e030af3dd15d8988913235048 = $(`<div id="html_1397b81e030af3dd15d8988913235048" style="width: 100.0%; height: 100.0%;">     <b>Meghalaya Carbide & Chemicals (P) Ltd.</b><br>     Type: calcium carbide / ferro alloys<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 0.862<br>     PM2.5: 0.862<br>      SO2: 1.231<br>     NOx: 0.862<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: EPIP industrial zone, Byrnihat     </div>`)[0];
+                popup_a30e70384e99f4c886da90e56fedb4eb.setContent(html_1397b81e030af3dd15d8988913235048);
+            
+        
+
+        circle_marker_797bdfc0ed7fedf071ff30fb849ba86e.bindPopup(popup_a30e70384e99f4c886da90e56fedb4eb)
+        ;
+
+        
+    
+    
+            circle_marker_797bdfc0ed7fedf071ff30fb849ba86e.bindTooltip(
+                `<div>
+                     Meghalaya Carbide & Chemicals (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6520ea448cea01bcdfabc671046bfa23 = L.circleMarker(
+                [26.0667, 91.8711],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5486, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_4a611d9992502e59e44c37345a962d13 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7dc1bee03c6f7d8c31aa6cb2ee8a423b = $(`<div id="html_7dc1bee03c6f7d8c31aa6cb2ee8a423b" style="width: 100.0%; height: 100.0%;">     <b>Adhunik Meghalaya Steels (P) Ltd.</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 2.581<br>     PM2.5: 2.581<br>      SO2: 2.212<br>     NOx: 2.581<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Plot No. 19/23E, EPIP Byrnihat     </div>`)[0];
+                popup_4a611d9992502e59e44c37345a962d13.setContent(html_7dc1bee03c6f7d8c31aa6cb2ee8a423b);
+            
+        
+
+        circle_marker_6520ea448cea01bcdfabc671046bfa23.bindPopup(popup_4a611d9992502e59e44c37345a962d13)
+        ;
+
+        
+    
+    
+            circle_marker_6520ea448cea01bcdfabc671046bfa23.bindTooltip(
+                `<div>
+                     Adhunik Meghalaya Steels (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_173f50e927f966f179c83f3b1854476b = L.circleMarker(
+                [26.04721, 91.85241],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.215199999999999, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_b7810bda30c416e38aff7add77f6f7e5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b23ac3040b3ab79189ef1576973804a1 = $(`<div id="html_b23ac3040b3ab79189ef1576973804a1" style="width: 100.0%; height: 100.0%;">     <b>M/s Trishul Industries</b><br>     Type: TMT bars / M.S. ingots<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 3.692<br>     PM2.5: 3.692<br>      SO2: 2.637<br>     NOx: 3.692<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_b7810bda30c416e38aff7add77f6f7e5.setContent(html_b23ac3040b3ab79189ef1576973804a1);
+            
+        
+
+        circle_marker_173f50e927f966f179c83f3b1854476b.bindPopup(popup_b7810bda30c416e38aff7add77f6f7e5)
+        ;
+
+        
+    
+    
+            circle_marker_173f50e927f966f179c83f3b1854476b.bindTooltip(
+                `<div>
+                     M/s Trishul Industries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_264dbabcaf2998d41fa823a1a2b9372c = L.circleMarker(
+                [26.0384, 91.8741],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1014, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_6bbb90b13cb3d6fbe8855b9cd4b9ba5c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f6dcf6a8758fd50492028d7e565e3368 = $(`<div id="html_f6dcf6a8758fd50492028d7e565e3368" style="width: 100.0%; height: 100.0%;">     <b>Anirudha Steel (P) Ltd.</b><br>     Type: M.S. ingots / casting<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 5.169<br>     PM2.5: 5.169<br>      SO2: 3.692<br>     NOx: 5.169<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_6bbb90b13cb3d6fbe8855b9cd4b9ba5c.setContent(html_f6dcf6a8758fd50492028d7e565e3368);
+            
+        
+
+        circle_marker_264dbabcaf2998d41fa823a1a2b9372c.bindPopup(popup_6bbb90b13cb3d6fbe8855b9cd4b9ba5c)
+        ;
+
+        
+    
+    
+            circle_marker_264dbabcaf2998d41fa823a1a2b9372c.bindTooltip(
+                `<div>
+                     Anirudha Steel (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e52f4b6e3f4c26769749af870d0e177 = L.circleMarker(
+                [26.04, 91.86],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6882, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_4d9f2d49fbf04da2ea9df5c914c6a350 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d18b074eccc59526cf8853832b08d24b = $(`<div id="html_d18b074eccc59526cf8853832b08d24b" style="width: 100.0%; height: 100.0%;">     <b>Meghalaya Sova Ispat Alloys Ltd.</b><br>     Type: ferro alloy<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 1.147<br>     PM2.5: 1.147<br>      SO2: 0.983<br>     NOx: 1.147<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Gate No. 6 / Norbong area, EPIP Byrnihat     </div>`)[0];
+                popup_4d9f2d49fbf04da2ea9df5c914c6a350.setContent(html_d18b074eccc59526cf8853832b08d24b);
+            
+        
+
+        circle_marker_7e52f4b6e3f4c26769749af870d0e177.bindPopup(popup_4d9f2d49fbf04da2ea9df5c914c6a350)
+        ;
+
+        
+    
+    
+            circle_marker_7e52f4b6e3f4c26769749af870d0e177.bindTooltip(
+                `<div>
+                     Meghalaya Sova Ispat Alloys Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7846b8e0fa7a422a0afb858ee7c36ca2 = L.circleMarker(
+                [26.0461, 91.8665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6152, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_61e340b2b3b673907ed98ab3e1e87074 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_8993181d00aa879ecc0c9467077b2732 = $(`<div id="html_8993181d00aa879ecc0c9467077b2732" style="width: 100.0%; height: 100.0%;">     <b>Trikuta Ferro Alloys (P) Ltd.</b><br>     Type: ferro alloy / M.S. ingots / re-rolling<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 2.692<br>     PM2.5: 2.692<br>      SO2: 2.308<br>     NOx: 2.692<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: EPIP, Byrnihat     </div>`)[0];
+                popup_61e340b2b3b673907ed98ab3e1e87074.setContent(html_8993181d00aa879ecc0c9467077b2732);
+            
+        
+
+        circle_marker_7846b8e0fa7a422a0afb858ee7c36ca2.bindPopup(popup_61e340b2b3b673907ed98ab3e1e87074)
+        ;
+
+        
+    
+    
+            circle_marker_7846b8e0fa7a422a0afb858ee7c36ca2.bindTooltip(
+                `<div>
+                     Trikuta Ferro Alloys (P) Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8614623357be306bb3a507171c9280c8 = L.circleMarker(
+                [26.045, 91.8517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2772, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_26694c875f41d92b092589624b69e137 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a50522720c267bf106b8eaebdc44a096 = $(`<div id="html_a50522720c267bf106b8eaebdc44a096" style="width: 100.0%; height: 100.0%;">     <b>Meghalaya Alloys Ltd.</b><br>     Type: integrated steel / ferro alloys<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 0.462<br>     PM2.5: 0.462<br>      SO2: 0.527<br>     NOx: 0.462<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Plot No. 25, EPIP, Byrnihat     </div>`)[0];
+                popup_26694c875f41d92b092589624b69e137.setContent(html_a50522720c267bf106b8eaebdc44a096);
+            
+        
+
+        circle_marker_8614623357be306bb3a507171c9280c8.bindPopup(popup_26694c875f41d92b092589624b69e137)
+        ;
+
+        
+    
+    
+            circle_marker_8614623357be306bb3a507171c9280c8.bindTooltip(
+                `<div>
+                     Meghalaya Alloys Ltd.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_640fba3a7a56135a7a786ac8a3ba98a0 = L.circleMarker(
+                [26.0498, 91.8718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_d0ded9b2ee2cc08e4dc5b94fe3ff6595 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3ab88804d7835f4fc18dfca32c94f0df = $(`<div id="html_3ab88804d7835f4fc18dfca32c94f0df" style="width: 100.0%; height: 100.0%;">     <b>Mahashakti Cement Cluster</b><br>     Type: cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 7.0<br>     PM2.5: 4.2<br>      SO2: 4.0<br>     NOx: 4.2<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: 15th Mile, G.S. Road, Byrnihat Assam-Meghalaya border     </div>`)[0];
+                popup_d0ded9b2ee2cc08e4dc5b94fe3ff6595.setContent(html_3ab88804d7835f4fc18dfca32c94f0df);
+            
+        
+
+        circle_marker_640fba3a7a56135a7a786ac8a3ba98a0.bindPopup(popup_d0ded9b2ee2cc08e4dc5b94fe3ff6595)
+        ;
+
+        
+    
+    
+            circle_marker_640fba3a7a56135a7a786ac8a3ba98a0.bindTooltip(
+                `<div>
+                     Mahashakti Cement Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57b9ebd0cc48e7688d07e72e29d71c14 = L.circleMarker(
+                [26.04972, 91.87167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_23deccd7a7c049634c6a99a487a1c897 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fa58e687391b66d7e0cb5dd158e38ca6 = $(`<div id="html_fa58e687391b66d7e0cb5dd158e38ca6" style="width: 100.0%; height: 100.0%;">     <b>Shivshakti Cements Cluster</b><br>     Type: cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 7.0<br>     PM2.5: 4.2<br>      SO2: 4.0<br>     NOx: 4.2<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Byrnihat / Sonapur area     </div>`)[0];
+                popup_23deccd7a7c049634c6a99a487a1c897.setContent(html_fa58e687391b66d7e0cb5dd158e38ca6);
+            
+        
+
+        circle_marker_57b9ebd0cc48e7688d07e72e29d71c14.bindPopup(popup_23deccd7a7c049634c6a99a487a1c897)
+        ;
+
+        
+    
+    
+            circle_marker_57b9ebd0cc48e7688d07e72e29d71c14.bindTooltip(
+                `<div>
+                     Shivshakti Cements Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57938018164212140646ead341756196 = L.circleMarker(
+                [26.0827, 91.8845],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_5c82282bb63b5850a3615505911e52a4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b04b1a54bac68597c1c6a4d2342a010d = $(`<div id="html_b04b1a54bac68597c1c6a4d2342a010d" style="width: 100.0%; height: 100.0%;">     <b>Vinayak Cements Cluster</b><br>     Type: cement cluster<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 6.5<br>     PM2.5: 3.9<br>      SO2: 3.714<br>     NOx: 3.9<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Byrnihat Industrial Area / Sarutari     </div>`)[0];
+                popup_5c82282bb63b5850a3615505911e52a4.setContent(html_b04b1a54bac68597c1c6a4d2342a010d);
+            
+        
+
+        circle_marker_57938018164212140646ead341756196.bindPopup(popup_5c82282bb63b5850a3615505911e52a4)
+        ;
+
+        
+    
+    
+            circle_marker_57938018164212140646ead341756196.bindTooltip(
+                `<div>
+                     Vinayak Cements Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2296b665f6af8ca79106912635ed3754 = L.circleMarker(
+                [26.113, 91.905],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.640000000000001, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_2fa6d92f3be979217bf54ce271dfe263 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_406c1bc1bf76a99578d3ba8cc6fafb52 = $(`<div id="html_406c1bc1bf76a99578d3ba8cc6fafb52" style="width: 100.0%; height: 100.0%;">     <b>Sudha Lime Cluster</b><br>     Type: lime / mineral processing<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.4<br>     PM2.5: 3.3<br>      SO2: 3.143<br>     NOx: 2.2<br><br>      Confidence: medium-low<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Kamarkuchi, near Tepesia, Sonapur/Byrnihat area     </div>`)[0];
+                popup_2fa6d92f3be979217bf54ce271dfe263.setContent(html_406c1bc1bf76a99578d3ba8cc6fafb52);
+            
+        
+
+        circle_marker_2296b665f6af8ca79106912635ed3754.bindPopup(popup_2fa6d92f3be979217bf54ce271dfe263)
+        ;
+
+        
+    
+    
+            circle_marker_2296b665f6af8ca79106912635ed3754.bindTooltip(
+                `<div>
+                     Sudha Lime Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f75acc267dd5414380c0a9a9fe6f0ba = L.circleMarker(
+                [26.0525, 91.87],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e64337ef98812797fe6f479ab823031f);
+        
+    
+        var popup_fcb06d3db251c31bea7ca0df38091559 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c69aad494529e513d0a9ae6502bac8b5 = $(`<div id="html_c69aad494529e513d0a9ae6502bac8b5" style="width: 100.0%; height: 100.0%;">     <b>Assam Sillimanite Industrial Cluster</b><br>     Type: sillimanite / mineral material<br>     Source Type: NA<br><br>      <b>Pollutant Weights</b><br>     PM10: 4.0<br>     PM2.5: 2.0<br>      SO2: 1.429<br>     NOx: 1.0<br><br>      Confidence: low-medium<br>     Coordinate status: approximate_from_secondary_ai_overview<br>     Location: Byrnihat industrial and mining belt     </div>`)[0];
+                popup_fcb06d3db251c31bea7ca0df38091559.setContent(html_c69aad494529e513d0a9ae6502bac8b5);
+            
+        
+
+        circle_marker_4f75acc267dd5414380c0a9a9fe6f0ba.bindPopup(popup_fcb06d3db251c31bea7ca0df38091559)
+        ;
+
+        
+    
+    
+            circle_marker_4f75acc267dd5414380c0a9a9fe6f0ba.bindTooltip(
+                `<div>
+                     Assam Sillimanite Industrial Cluster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_e64337ef98812797fe6f479ab823031f.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_64c8c16213ee0f322db5ba22e72f5180 = L.marker(
+                [26.065, 91.875],
+                {
+}
+            ).addTo(feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed);
+        
+    
+            var icon_8349798b9707e8d28fd2f0b56cf2f295 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95b10c75b140d0b842c2fba62d7a41a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e5ead1df30e9d5558ec8fe251ebc27 = $(`<div id="html_c2e5ead1df30e9d5558ec8fe251ebc27" style="width: 100.0%; height: 100.0%;"><b>Byrnihat AQICN observation area</b><br> Observed pollution data collected for Byrnihat</div>`)[0];
+                popup_95b10c75b140d0b842c2fba62d7a41a7.setContent(html_c2e5ead1df30e9d5558ec8fe251ebc27);
+            
+        
+
+        marker_64c8c16213ee0f322db5ba22e72f5180.bindPopup(popup_95b10c75b140d0b842c2fba62d7a41a7)
+        ;
+
+        
+    
+    
+            marker_64c8c16213ee0f322db5ba22e72f5180.bindTooltip(
+                `<div>
+                     Byrnihat AQICN observation area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64c8c16213ee0f322db5ba22e72f5180.setIcon(icon_8349798b9707e8d28fd2f0b56cf2f295);
+            
+    
+            var marker_8946db8c862abc550fcf0175f68fe4f4 = L.marker(
+                [26.1445, 91.7362],
+                {
+}
+            ).addTo(feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed);
+        
+    
+            var icon_c13fc4ce2dc33872bd3436af13ccc691 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4245b71dca7b72b4eeb669a1ff0a54f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37b61473aa88d1ce558daf726bf31bd6 = $(`<div id="html_37b61473aa88d1ce558daf726bf31bd6" style="width: 100.0%; height: 100.0%;"><b>Guwahati AQICN observation area</b><br> Observed pollution data collected for Guwahati</div>`)[0];
+                popup_4245b71dca7b72b4eeb669a1ff0a54f9.setContent(html_37b61473aa88d1ce558daf726bf31bd6);
+            
+        
+
+        marker_8946db8c862abc550fcf0175f68fe4f4.bindPopup(popup_4245b71dca7b72b4eeb669a1ff0a54f9)
+        ;
+
+        
+    
+    
+            marker_8946db8c862abc550fcf0175f68fe4f4.bindTooltip(
+                `<div>
+                     Guwahati AQICN observation area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8946db8c862abc550fcf0175f68fe4f4.setIcon(icon_c13fc4ce2dc33872bd3436af13ccc691);
+            
+    
+            var marker_ce7e589cda065e1cd18c64ce562fd03a = L.marker(
+                [25.5788, 91.8933],
+                {
+}
+            ).addTo(feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed);
+        
+    
+            var icon_212995660601670c3bcb530abbf439c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0df03d1a6687d26f117ad117a40f272e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_148371298be7c6b674625056deeb6c6b = $(`<div id="html_148371298be7c6b674625056deeb6c6b" style="width: 100.0%; height: 100.0%;"><b>Shillong AQICN observation area</b><br> Observed pollution data collected for Shillong</div>`)[0];
+                popup_0df03d1a6687d26f117ad117a40f272e.setContent(html_148371298be7c6b674625056deeb6c6b);
+            
+        
+
+        marker_ce7e589cda065e1cd18c64ce562fd03a.bindPopup(popup_0df03d1a6687d26f117ad117a40f272e)
+        ;
+
+        
+    
+    
+            marker_ce7e589cda065e1cd18c64ce562fd03a.bindTooltip(
+                `<div>
+                     Shillong AQICN observation area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce7e589cda065e1cd18c64ce562fd03a.setIcon(icon_212995660601670c3bcb530abbf439c1);
+            
+    
+            feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var feature_group_4c9c103b43dbee2df68e69afd2c54671 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ad244462160222516d8f66a39dbac55d = L.marker(
+                [25.8, 91.9],
+                {
+}
+            ).addTo(feature_group_4c9c103b43dbee2df68e69afd2c54671);
+        
+    
+            var icon_e621aa2754e01ad55114277b2a9d7b90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "green",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86a6c3cc0759f5753c866c87a77019d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b9150f1ae777c38316e43adaef0e198 = $(`<div id="html_9b9150f1ae777c38316e43adaef0e198" style="width: 100.0%; height: 100.0%;"><b>Meghalaya hill region</b><br>Higher terrain south of Byrnihat. Hills may influence wind direcion</div>`)[0];
+                popup_86a6c3cc0759f5753c866c87a77019d9.setContent(html_9b9150f1ae777c38316e43adaef0e198);
+            
+        
+
+        marker_ad244462160222516d8f66a39dbac55d.bindPopup(popup_86a6c3cc0759f5753c866c87a77019d9)
+        ;
+
+        
+    
+    
+            marker_ad244462160222516d8f66a39dbac55d.bindTooltip(
+                `<div>
+                     Meghalaya hill region
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad244462160222516d8f66a39dbac55d.setIcon(icon_e621aa2754e01ad55114277b2a9d7b90);
+            
+    
+            var marker_8e286293b7c5b34353e1e8dc7a5dfa8f = L.marker(
+                [26.15, 91.75],
+                {
+}
+            ).addTo(feature_group_4c9c103b43dbee2df68e69afd2c54671);
+        
+    
+            var icon_4046caa9a7507418e0afabeb15e4544a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "green",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_877597122674f6498d1786907f9a8814 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16e0496b184f5ccead1c98a1c064f713 = $(`<div id="html_16e0496b184f5ccead1c98a1c064f713" style="width: 100.0%; height: 100.0%;"><b>Brahmaputra valley / Guwahati side</b><br>Lower valey region compared with Meghalaya hills. </div>`)[0];
+                popup_877597122674f6498d1786907f9a8814.setContent(html_16e0496b184f5ccead1c98a1c064f713);
+            
+        
+
+        marker_8e286293b7c5b34353e1e8dc7a5dfa8f.bindPopup(popup_877597122674f6498d1786907f9a8814)
+        ;
+
+        
+    
+    
+            marker_8e286293b7c5b34353e1e8dc7a5dfa8f.bindTooltip(
+                `<div>
+                     Brahmaputra valley / Guwahati side
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e286293b7c5b34353e1e8dc7a5dfa8f.setIcon(icon_4046caa9a7507418e0afabeb15e4544a);
+            
+    
+            var marker_e2dcbb5fafefdee9c056871911b14d08 = L.marker(
+                [26.06, 91.87],
+                {
+}
+            ).addTo(feature_group_4c9c103b43dbee2df68e69afd2c54671);
+        
+    
+            var icon_cd6c12bb70f04d007740aaf24d7a4ec8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "green",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93382a6740e3e211ec7a25b92ad746ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_180a1c9c43f81eea4c0bd3f4851bcb65 = $(`<div id="html_180a1c9c43f81eea4c0bd3f4851bcb65" style="width: 100.0%; height: 100.0%;"><b>Byrnihat Transition zone</b><br>Industrial belt near the Assam - Meghalaya transition zone.</div>`)[0];
+                popup_93382a6740e3e211ec7a25b92ad746ab.setContent(html_180a1c9c43f81eea4c0bd3f4851bcb65);
+            
+        
+
+        marker_e2dcbb5fafefdee9c056871911b14d08.bindPopup(popup_93382a6740e3e211ec7a25b92ad746ab)
+        ;
+
+        
+    
+    
+            marker_e2dcbb5fafefdee9c056871911b14d08.bindTooltip(
+                `<div>
+                     Byrnihat Transition zone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2dcbb5fafefdee9c056871911b14d08.setIcon(icon_cd6c12bb70f04d007740aaf24d7a4ec8);
+            
+    
+            feature_group_4c9c103b43dbee2df68e69afd2c54671.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var feature_group_ff60ff797b0218f9f7902e82e9ad07ec = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_2ca07e045ec47b0725044c41d707f4da = L.polyline(
+                [[26.05, 91.875], [26.12, 91.8]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff60ff797b0218f9f7902e82e9ad07ec);
+        
+    
+            poly_line_2ca07e045ec47b0725044c41d707f4da.bindTooltip(
+                `<div>
+                     Possible movement towards Guwahati / valley side
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2a7bb9aba5f87ca88b0b55568ede02e0 = L.polyline(
+                [[26.065, 91.875], [25.95, 91.89]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff60ff797b0218f9f7902e82e9ad07ec);
+        
+    
+            poly_line_2a7bb9aba5f87ca88b0b55568ede02e0.bindTooltip(
+                `<div>
+                     Possible movement toward Meghalaya hill side
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_ff60ff797b0218f9f7902e82e9ad07ec.addTo(map_45ed63d7aaaea74076793b4229fba05c);
+        
+    
+            var tile_layer_719dac6226b864d9ecc139a37f83884d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_8fd2563ebd59edb7b0f07ddd3c026be8 = new L.Control.MiniMap(
+                tile_layer_719dac6226b864d9ecc139a37f83884d,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_45ed63d7aaaea74076793b4229fba05c.addControl(mini_map_8fd2563ebd59edb7b0f07ddd3c026be8);
+        
+    
+            var measure_control_a7ca4995eed7d15075f7a95ac47543c9 = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_45ed63d7aaaea74076793b4229fba05c.addControl(measure_control_a7ca4995eed7d15075f7a95ac47543c9);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            var layer_control_5824f55f2ed9830dfa8fb363a1abb2a8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c4b83aed5f8d30590cea46636b82650d,
+                    "OpenStreetMap - Roads and towns" : tile_layer_f939de18cba62870a8e7adc5b6b05a64,
+                    "OpenTotoMap - Terrain and hills" : tile_layer_a85987d95bff5843d9c109a66c7c78d3,
+                    "Light  Bachground Map" : tile_layer_f4db6938ca851c9c873bbc673bf8776f,
+                },
+                overlays :  {
+                    "Major Places" : feature_group_68fba081efde1f42eb1741d170b6749a,
+                    "Industries / Cluster Sources" : feature_group_e64337ef98812797fe6f479ab823031f,
+                    " AQICN Observation Locations" : feature_group_d08b1b7ad59d4bcf01dc7f5816d3c0ed,
+                    "Terrain / wind-flow interpretation" : feature_group_4c9c103b43dbee2df68e69afd2c54671,
+                    "Illustirative wind / transport paths" : feature_group_ff60ff797b0218f9f7902e82e9ad07ec,
+                },
+            };
+            let layer_control_5824f55f2ed9830dfa8fb363a1abb2a8 = L.control.layers(
+                layer_control_5824f55f2ed9830dfa8fb363a1abb2a8_layers.base_layers,
+                layer_control_5824f55f2ed9830dfa8fb363a1abb2a8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_45ed63d7aaaea74076793b4229fba05c);
+
+        
+</script>
+</html>

@@ -32,8 +32,13 @@ jobs:
 
       - name: Commit updated NASA data
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add -f data/raw/nasa_power_hourly_tracker.csv
-          git commit -m "Update NASA POWER hourly data" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ outputs/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update NASA POWER hourly data"
+            git pull --rebase origin main
+            git push origin main
+          fi

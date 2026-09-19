@@ -1,0 +1,10 @@
+file_name,description,rows,folder
+prototype_byrnihat_aqicn_observations.csv,Synthetic proxy for missing Byrnihat hourly pollution observations in AQICN-like processed schema,4296,aqicn_observation_schema
+prototype_guwahati_aqicn_observations.csv,Synthetic proxy for missing Guwahati hourly pollution observations in AQICN-like processed schema,4296,aqicn_observation_schema
+prototype_shillong_aqicn_observations.csv,Synthetic proxy for missing Shillong hourly pollution observations in AQICN-like processed schema,4296,aqicn_observation_schema
+prototype_all_three_city_pollution_observations.csv,"Combined pollution proxy dataset for Byrnihat, Guwahati, and Shillong",12888,aqicn_observation_schema
+prototype_byrnihat_region_meteorological_observations.csv,Synthetic proxy meteorological grid/locations around Byrnihat and corridor context,38664,meteorology_schema
+prototype_nasa_power_hourly_tracker_byrnihat_region.csv,Same meteorological proxy in NASA-tracker-compatible column style,38664,meteorology_schema
+prototype_ml1_pollution_meteorology_dataset.csv,Merged pollution + meteorological proxy dataset with ML features and next-hour targets,12885,ml_ready
+prototype_ml_train.csv,"Time-based training split, before 2026-06-01",10872,ml_ready
+prototype_ml_test.csv,"Time-based test split, 2026-06-01 onward",2013,ml_ready

@@ -53,6 +53,17 @@ The system features a decoupled, interactive visualization layer providing compr
 - **ML-Predicted Plume Simulation**: Visualizes the machine learning model's predictions for plume direction, strength, and particle spread originating from the emission source.
   ![ML-Predicted Plume Simulation](assets/ml_plume_simulation.png)
 
+- **ML Predictions & Error Tracking**: Compares the model's predicted values against ground truth for time-series forecasting and plume direction, actively tracking angular and vector errors.
+  ![ML Predictions Timeseries](assets/ml_predictions_timeseries.png)
+  ![ML Plume Direction Evaluation](assets/ml2_plume_direction.png)
+
+- **Historical Analysis & Distributions**: Provides temporal trends of pollution levels across multiple cities and monthly statistical distributions using box plots.
+  ![Historical Pollution Levels](assets/historical_pollution_levels.png)
+  ![Monthly Distribution](assets/monthly_distribution.png)
+
+- **Model Evaluation Metrics**: Detailed breakdown of RMSE, MAE, and R² scores across all predicted pollutants and meteorological targets for the ML-1 model.
+  ![ML-1 Model Evaluation Metrics](assets/ml1_model_evaluation.png)
+
 ## Installation & Setup
 
 **Prerequisites:**

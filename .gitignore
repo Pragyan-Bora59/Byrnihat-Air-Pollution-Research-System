@@ -32,3 +32,14 @@ data/processed/
 # System files
 .DS_Store
 Thumbs.db
+# Ignore Large ML Models
+models/*.joblib
+
+# Spatial & Satellite Data
+*.hdf
+*.nc
+*.nc4
+*.zarr
+*.grib
+data/spatial/
+data/satellite/

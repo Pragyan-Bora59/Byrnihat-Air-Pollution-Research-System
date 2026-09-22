@@ -1,7 +1,7 @@
 # Byrnihat Air Pollution Research System
 
 ## Overview
-The **Byrnihat Air Pollution Research System** is a machine learning framework designed for air quality prediction and atmospheric simulation on the Assam–Meghalaya border. Developed with a rigorous focus on data science and environmental engineering, this system acts as a high-performance simulation and inference engine. It leverages offline-trained machine learning models and spatial calculation algorithms to forecast pollution dispersion and provide real-time analytical insights.
+The **Byrnihat Air Pollution Research System** is a production-grade machine learning framework designed for air quality prediction and atmospheric simulation on the Assam–Meghalaya border. Developed with a rigorous focus on data science and environmental engineering, this system acts as a high-performance simulation and inference engine. It leverages offline-trained machine learning models and spatial calculation algorithms to forecast pollution dispersion and provide real-time analytical insights.
 
 ## Academic & Technical Merit
 This project heavily emphasizes advanced machine learning and data science workflows, focusing on robust back-end engineering:
@@ -34,6 +34,24 @@ byrnihat-air-data/
 1. **Decoupled Machine Learning Core:** Strict separation of the ML pipeline from the visualization layer. The heavy lifting—data ingestion, feature engineering, and model inference—is isolated within the `backend/` and `ml/` environments.
 2. **I/O & Inference Optimization:** The framework is optimized by processing compute-heavy training and data manipulation operations offline. The resulting predictions and vectors are ingested by the visualization layer instantly.
 3. **Scientific Accuracy in Visualization:** Heatmaps and spatial vectors are mapped using scientifically appropriate color scales (e.g., Viridis for particle density) and strict magnitude normalization, ensuring model outputs are presented accurately.
+
+## Dashboard Features & Visualizations
+The system features a decoupled, interactive visualization layer providing comprehensive insights into air quality and simulation data:
+
+- **Main Dashboard**: Displays latest air quality metrics (AQI, PM2.5, PM10) for key locations (Byrnihat, Guwahati, Shillong) alongside model performance summaries and trend lines.
+  ![Main Dashboard](assets/dashboard.png)
+
+- **Temporal Plume Animation**: An interactive map simulation demonstrating the dispersion of plume particles from emission sources over time, complete with playback controls and timeline scrubbing.
+  ![Temporal Plume Animation](assets/temporal_plume_animation.png)
+
+- **Georeferenced Concentration Map (PM10 Diffusion)**: A spatial heatmap visualizing the relative concentration and diffusion of PM10 across the terrain.
+  ![PM10 Diffusion](assets/pm10_diffusion.png)
+
+- **Interpolated Wind Field (Spatial Grid)**: A detailed vector map illustrating wind speed and direction across the geographical area using interpolated spatial data.
+  ![Interpolated Wind Field](assets/wind_field.png)
+
+- **ML-Predicted Plume Simulation**: Visualizes the machine learning model's predictions for plume direction, strength, and particle spread originating from the emission source.
+  ![ML-Predicted Plume Simulation](assets/ml_plume_simulation.png)
 
 ## Installation & Setup
 

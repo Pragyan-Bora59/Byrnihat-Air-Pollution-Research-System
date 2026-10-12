@@ -302,3 +302,6 @@ collection_time_utc,fetch_success,api_status,error_message,target_city,station_c
 2026-10-12T04:46:52.639229+00:00,False,nope,can not connect,Byrnihat,A1364707,"15th Mile-Nongthymmai, Byrnihat",26.05374,91.86796,,,,,,,,,,,,,,,,
 2026-10-12T04:46:53.126063+00:00,False,nope,can not connect,Guwahati,H11844,"Railway Colony, Guwahati, India",26.181742,91.78063,,,,,,,,,,,,,,,,
 2026-10-12T04:46:53.601261+00:00,False,nope,can not connect,Shillong,H12740,"Lumpyngngad, Shillong, India",25.5586,91.8985,,,,,,,,,,,,,,,,
+2026-10-12T12:50:41.284954+00:00,False,nope,can not connect,Byrnihat,A1364707,"15th Mile-Nongthymmai, Byrnihat",26.05374,91.86796,,,,,,,,,,,,,,,,
+2026-10-12T12:50:42.070820+00:00,False,nope,can not connect,Guwahati,H11844,"Railway Colony, Guwahati, India",26.181742,91.78063,,,,,,,,,,,,,,,,
+2026-10-12T12:50:42.730995+00:00,False,nope,can not connect,Shillong,H12740,"Lumpyngngad, Shillong, India",25.5586,91.8985,,,,,,,,,,,,,,,,
